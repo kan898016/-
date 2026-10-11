@@ -1,0 +1,111 @@
+/* Основные стили */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Georgia', serif;
+    background: #fafafa;
+    color: #333;
+    line-height: 1.8;
+}
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #eee;
+}
+header h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+}
+header p {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+}
+nav {
+    margin: 20px 0;
+    text-align: center;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #3498db;
+    padding: 8px 16px;
+    border-radius: 6px;
+    transition: background 0.3s, color 0.3s;
+}
+nav a:hover {
+    background: #ecf0f1;
+    color: #2980b9;
+}
+main {
+    margin-top: 30px;
+}
+section#story, section#games {
+    margin-bottom: 40px;
+}
+section h2 {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+#story-content {
+    font-size: 1.1rem;
+    line-height: 1.9;
+    text-align: justify;
+    column-count: 2;
+    column-gap: 40px;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 40px;
+}
+@media (max-width: 600px) {
+    #story-content {
+        column-count: 1;
+        -webkit-column-count: 1;
+    }
+}
+.hidden {
+    display: none;
+}
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 5px;
+    background: #27ae60;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.btn:hover {
+    background: #219955;
+}
+.game-box {
+    background: #ecf0f1;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+.game-box h3 {
+    margin-top: 0;
+}
